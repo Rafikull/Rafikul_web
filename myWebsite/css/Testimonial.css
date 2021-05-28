@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+/*  display: grid;
+  height: 100%;
+  place-items: center;*/
+background-color: #f8f8f8;
+border: 3px solid #3498db;
+width:100%;
+   min-height: 100vh;
+}
+::selection{
+  background: rgba(23,162,184,0.3);
+}
+.inbox{
+ max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+/*  align-items: center;*/
+  justify-content: space-between;
+}
+.inbox .fill{
+  background: #fff;
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 3px;
+border: 3px solid #3498db;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+.inbox .fill i.quote{
+  font-size: 20px;
+  color: #17a2b8;
+}
+.inbox .fill .content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.fill .info .name{
+  font-weight: 600;
+  font-size: 17px;
+}
+.fill .info .job{
+  font-size: 16px;
+  font-weight: 500;
+  color: #17a2b8;
+}
+.fill .info .stars{
+  margin-top: 2px;
+}
+.fill .info .stars i{
+  color: #17a2b8;
+}
+.fill .content .image{
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  background: #17a2b8;
+  border-radius: 50%;
+}
+.content .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.fill:hover .content .image img{
+  border-color: #fff;
+}
+
+@media (max-width: 1045px) {
+  .inbox .fill{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 702px) {
+  .inbox .fill{
+    width: 100%;
+  }
+}
